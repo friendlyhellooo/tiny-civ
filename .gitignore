@@ -109,4 +109,4 @@ InitTestScene*.unity*
 /Assets/Readme.asset.meta
 /Assets/Scenes.meta
 /Assets/Settings.meta
-*.mtl
+/vscode
