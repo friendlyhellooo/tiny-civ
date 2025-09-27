@@ -103,9 +103,9 @@ InitTestScene*.unity*
 /tiny-civ-dev/Logs
 /tiny-civ-dev/Temp
 *.meta
-*.InputSystem_Actions.inputactions
-*.InputSystem_Actions.inputactions.meta
-*.Readme.asset
-*.Readme.asset.meta
-*.Scenes.meta
-*.Settings.meta
+/Assets/InputSystem_Actions.inputactions
+/Assets/InputSystem_Actions.inputactions.meta
+/Assets/Readme.asset
+/Assets/Readme.asset.meta
+/Assets/Scenes.meta
+/Assets/Settings.meta
