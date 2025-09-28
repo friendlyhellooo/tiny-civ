@@ -1,16 +1,34 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class InfoPanelManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] GameObject panel;
+    [SerializeField] TMP_Text titleText;
+    [SerializeField] TMP_Text infoText;
+    [SerializeField] Image iconImage;
+
     void Start()
     {
-        
+        panel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenPanel(string title, string info, Sprite icon)
     {
-        
+        titleText.text = title;
+        infoText.text = info;
+        iconImage.sprite = icon;
+        panel.SetActive(true);
+    }
+
+    public void ClosePanel()
+    {
+        panel.SetActive(false);
+    }
+
+    public bool PanelIsActive()
+    {
+        return panel.activeSelf;
     }
 }

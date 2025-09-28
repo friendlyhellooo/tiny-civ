@@ -2,5 +2,5 @@ using UnityEngine;
 
 public class BuildingRef : MonoBehaviour
 {
-    [SerializeField] BuildingRef reference;
+    public BuildingData data;
 }
