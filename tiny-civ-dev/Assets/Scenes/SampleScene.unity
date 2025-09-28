@@ -1176,8 +1176,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3725,7 +3725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b37c4645844654bbe60e16f1e8a1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: c51db87b999c8564b8455ca7b8e17e17, type: 2}
 --- !u!65 &796713883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6552,7 +6552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b37c4645844654bbe60e16f1e8a1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: 6a7a45b680547a241b3056c86711bef1, type: 2}
 --- !u!65 &1650316547
 BoxCollider:
   m_ObjectHideFlags: 0

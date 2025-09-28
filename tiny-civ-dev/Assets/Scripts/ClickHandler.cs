@@ -10,14 +10,8 @@ public class ClickHandler : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(panelManager.PanelIsActive())
-            {
-                panelManager.ClosePanel();
-                return;
-            }
-
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -38,10 +32,16 @@ public class ClickHandler : MonoBehaviour
                 if (building != null)
                 {
                     panelManager.OpenPanel(
-                        building.data.BuildingName,
+                        building.data.buildingName,
                         building.data.description,
                         building.data.icon
                     );
+                    return;
+                }
+                
+                if (panelManager.PanelIsActive())
+                {
+                    panelManager.ClosePanel();
                     return;
                 }
             }
