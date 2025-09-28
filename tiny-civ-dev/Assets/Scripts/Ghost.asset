@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af6eab962ea5dd4695510da9dd2dff9, type: 3}
   m_Name: Ghost
   m_EditorClassIdentifier: 
-  unitName: 
-  description: 
-  icon: {fileID: 0}
+  unitName: Ghost
+  description: 'Melee Strength: 0
+
+    Movement: 2'
+  icon: {fileID: 21300000, guid: 92a120e629699b1488fc4e527b6c95b9, type: 3}

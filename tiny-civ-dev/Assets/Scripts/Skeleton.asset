@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af6eab962ea5dd4695510da9dd2dff9, type: 3}
   m_Name: Skeleton
   m_EditorClassIdentifier: 
-  unitName: 
-  description: 
-  icon: {fileID: 0}
+  unitName: 'Skeleton '
+  description: 'Melee Strength: 1
+
+    Movement: 1'
+  icon: {fileID: 21300000, guid: 409dd66fc0b94d645a745850f73a5076, type: 3}
