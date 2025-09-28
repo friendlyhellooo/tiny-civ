@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BackTex:
-        m_Texture: {fileID: 2800000, guid: 93d2e2589e911fc49909c4b14d041142, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4727c8d8397f9e549880cc5e1d279fa4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DownTex:
-        m_Texture: {fileID: 2800000, guid: d6834308124790347804bf40d6a09526, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2e80c9d058df4db4bb329dcabcd44bca, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -57,11 +57,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FrontTex:
-        m_Texture: {fileID: 2800000, guid: b200aa8308dbeab418c14b8b2b800e4d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51e864b4df6977844930048b187d135c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftTex:
-        m_Texture: {fileID: 2800000, guid: 83c2eb2a01018b64594a03308a38fe52, type: 3}
+        m_Texture: {fileID: 2800000, guid: c01b86d00a8bf474b96b3c6b0ffc9f9c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -81,7 +81,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightTex:
-        m_Texture: {fileID: 2800000, guid: c69eb8bd58d3aa54bb85a797f0a940d2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5bf26c99c70be8d4aa36a911598f9587, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -93,7 +93,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _UpTex:
-        m_Texture: {fileID: 2800000, guid: c1a023d6e04fd2742a925d9092d6aa8e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5c2acb9f12ce3934b9aca8d18deec040, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -125,7 +125,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Exposure: 1
+    - _Exposure: 0.28
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -148,7 +148,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Tint: {r: 0.90079916, g: 0.39215684, b: 0.9607843, a: 0.43529412}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3512035043743425009

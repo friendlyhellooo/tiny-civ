@@ -48,6 +48,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.58f1-x86_64\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BuildingRef.cs" />
+    <Compile Include="Assets\Scripts\UnitRef.cs" />
+    <Compile Include="Assets\Scripts\UnitData.cs" />
+    <Compile Include="Assets\Scripts\BuildingData.cs" />
     <Compile Include="Assets\Scripts\HelloWorld.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
   </ItemGroup>
