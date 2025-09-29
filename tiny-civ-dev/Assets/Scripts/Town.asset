@@ -13,12 +13,6 @@ MonoBehaviour:
   m_Name: Town
   m_EditorClassIdentifier: 
   buildingName: Esperville
-  description: '+1 Gold, +2 Production
-
-
-    Civilian Status: Unhappy (Revolt is
-    imminent)
-
-
-    Once called the town of Zozo, it is seeing better days.'
+  description: "+1 Gold, +2 Production\n\nCivilian Status: Unhappy \n(Revolt is imminent)\n\nOnce
+    called the town of Zozo, it is seeing better days."
   icon: {fileID: 21300000, guid: 6715a17bffdd70243bde4fe6de3a5213, type: 3}
