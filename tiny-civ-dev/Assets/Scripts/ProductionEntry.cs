@@ -9,6 +9,7 @@ public class ProductionEntry : MonoBehaviour
     [SerializeField] TMP_Text infoText;
     [SerializeField] Image iconImage;
 
+    // (!) description is not being used
     public void Setup(string name, string description, int turns, Sprite icon, int cost = 0)
     {
         nameText.text = name;

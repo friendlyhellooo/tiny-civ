@@ -4,6 +4,7 @@ using UnityEngine.UI;
 // (!) Manages Production Panel, tabs, item entries (prefabs), and open/close panel behavior
 public class ProductionPanelManager : MonoBehaviour
 {
+    // I love headers <3 I love organizing <3
     [Header("Panel & Tabs")]
     //Main production panel UI
     [SerializeField] private GameObject panel;
@@ -27,8 +28,8 @@ public class ProductionPanelManager : MonoBehaviour
     [SerializeField] private Sprite millIcon;
     [SerializeField] private Sprite wizardTowerIcon;
 
-    [Header("Prefabs")]
     // Production Entry Prefab
+    [Header("Prefabs")]
     [SerializeField] private GameObject entryPrefab;
 
     [Header("UI Elements")]
@@ -49,7 +50,7 @@ public class ProductionPanelManager : MonoBehaviour
         PopulateExamplePurchaseEntries();
     }
 
-// Leaving this here for now - clean up later
+    // Leaving this here for now - clean up later
     public void ClosePanel()
     {
         panel.SetActive(false);
@@ -91,7 +92,7 @@ public class ProductionPanelManager : MonoBehaviour
         AddProductionEntry("Port", "Increase gold count", 4, portIcon);
     }
 
-    // Hardcoded purchase entries
+    // Hardcoded purchase entries for Purchase Panel D:
     private void PopulateExamplePurchaseEntries()
     {
         AddPurchaseEntry("Market", "Increase gold output", 0, marketIcon, 100);
@@ -99,7 +100,7 @@ public class ProductionPanelManager : MonoBehaviour
         AddPurchaseEntry("Mill", "Improves Production", 0, millIcon, 150);
     }
 
-    // Close panel w/overlay button
+    // Close panel giant close w/overlay button
     private void OnOverlayClick()
     {
         // Cast a ray from the camera to where the mouse clicked

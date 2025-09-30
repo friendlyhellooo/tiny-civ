@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class BuildingClickHandler : MonoBehaviour
 {
-    [SerializeField] private ProductionPanelManager panelManager; // Reference to the ProductionPanelManager
+
+    // Reference to the ProductionPanelManager
+    [SerializeField] private ProductionPanelManager panelManager; 
 
     private void OnMouseDown()
     {
