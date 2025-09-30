@@ -101,7 +101,7 @@ public class ProductionPanelManager : MonoBehaviour
     private void PopulateExamplePurchaseEntries()
     {
         AddPurchaseEntry("Market", "Increase gold output", 0, marketIcon, 100);
-        AddPurchaseEntry("Temple", "Increase gold output", 0, mineIcon, 120);
+        AddPurchaseEntry("Mine", "Increase gold output", 0, mineIcon, 120);
         AddPurchaseEntry("Mill", "Improves Production", 0, millIcon, 150);
     }
 }
