@@ -89,7 +89,7 @@ public class ProductionPanelManager : MonoBehaviour
         entry.Setup(name, description, turns, icon, cost);
     }
 
-    // Hardcoded production entries
+    // (!) Hardcoded! ACK FIX LATER Production entries:
     private void PopulateExampleProductionEntries()
     {
         AddProductionEntry("Sheep", "Boosts happiness", 3, sheepIcon);
