@@ -18,6 +18,15 @@ public class ProductionPanelManager : MonoBehaviour
     //ScrollView Content Object for Production
     [SerializeField] private Transform purchaseContentParent;
 
+    // Expose building icons in Inspector
+    [Header("Icons")]
+    [SerializeField] private Sprite granaryIcon;
+    [SerializeField] private Sprite barracksIcon;
+    [SerializeField] private Sprite libraryIcon;
+    [SerializeField] private Sprite marketIcon;
+    [SerializeField] private Sprite templeIcon;
+    [SerializeField] private Sprite wallsIcon;
+
     [Header("Prefabs")]
     // Production Entry Prefab
     [SerializeField] private GameObject entryPrefab;
@@ -35,6 +44,10 @@ public class ProductionPanelManager : MonoBehaviour
 
         if (overlayButton != null)
             overlayButton.onClick.AddListener(ClosePanel);
+
+        // (!) Hardcoded example entries for testing
+        PopulateExampleProductionEntries();
+        PopulateExamplePurchaseEntries();
     }
 
     // Open/Close Panel
@@ -74,5 +87,21 @@ public class ProductionPanelManager : MonoBehaviour
         GameObject newEntry = Instantiate(entryPrefab, purchaseContentParent);
         ProductionEntry entry = newEntry.GetComponent<ProductionEntry>();
         entry.Setup(name, description, turns, icon, cost);
+    }
+
+    // Hardcoded production entries
+    private void PopulateExampleProductionEntries()
+    {
+        AddProductionEntry("Granary", "Stores food to grow population", 3, granaryIcon);
+        AddProductionEntry("Barracks", "Trains soldiers", 5, barracksIcon);
+        AddProductionEntry("Library", "Generates science per turn", 4, libraryIcon);
+    }
+
+    // Hardcoded purchase entries
+    private void PopulateExamplePurchaseEntries()
+    {
+        AddPurchaseEntry("Market", "Increase gold output", 0, marketIcon, 100);
+        AddPurchaseEntry("Temple", "Boosts culture", 0, templeIcon, 120);
+        AddPurchaseEntry("Walls", "Improves defense", 0, wallsIcon, 150);
     }
 }
