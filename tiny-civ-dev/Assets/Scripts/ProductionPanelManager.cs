@@ -38,7 +38,6 @@ public class ProductionPanelManager : MonoBehaviour
     private void Awake()
     {
         // (!) Make sure the close buttons are hooked up in inspector
-
         if (closeButton != null)
             closeButton.onClick.AddListener(ClosePanel);
 
@@ -50,12 +49,7 @@ public class ProductionPanelManager : MonoBehaviour
         PopulateExamplePurchaseEntries();
     }
 
-    // Open/Close Panel
-    public void OpenPanel()
-    {
-        panel.SetActive(true);
-    }
-
+// Leaving this here for now - clean up later
     public void ClosePanel()
     {
         panel.SetActive(false);
@@ -107,20 +101,24 @@ public class ProductionPanelManager : MonoBehaviour
 
     // Close panel w/overlay button
     private void OnOverlayClick()
-{
-    // Cast a ray from the camera to where the mouse clicked
-    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    RaycastHit hit;
-
-    // If the ray hits something
-    if (Physics.Raycast(ray, out hit))
     {
-        // If the thing we clicked has a BuildingClickHandler, don't close
-        if (hit.collider.GetComponent<BuildingClickHandler>() != null)
-            return; // clicked a building, do nothing
-    }
+        // Cast a ray from the camera to where the mouse clicked
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
-    // Safe to close panel
-    ClosePanel();
-}
+        // If the ray hits something
+        if (Physics.Raycast(ray, out hit))
+        {
+            // If the thing we clicked has a BuildingClickHandler, don't close
+            if (hit.collider.GetComponent<BuildingClickHandler>() != null)
+                return; // clicked a building, do nothing
+        }
+        // Safe to close panel
+        ClosePanel();
+    }
+    // Open panel - clean this up later
+    public void OpenPanel()
+    {
+        panel.SetActive(true);
+    }
 }
