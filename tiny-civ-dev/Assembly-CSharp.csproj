@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\ClickHandler.cs" />
     <Compile Include="Assets\Scripts\ProductionEntry.cs" />
     <Compile Include="Assets\Scripts\HelloWorld.cs" />
+    <Compile Include="Assets\Scripts\BuildingClickHandler.cs" />
     <Compile Include="Assets\Scripts\ProductionPanelManager.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\InfoPanelManager.cs" />
