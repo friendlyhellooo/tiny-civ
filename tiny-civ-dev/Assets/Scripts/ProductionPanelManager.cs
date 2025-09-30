@@ -20,12 +20,12 @@ public class ProductionPanelManager : MonoBehaviour
 
     // Expose building icons in Inspector
     [Header("Icons")]
-    [SerializeField] private Sprite granaryIcon;
-    [SerializeField] private Sprite barracksIcon;
-    [SerializeField] private Sprite libraryIcon;
+    [SerializeField] private Sprite sheepIcon;
+    [SerializeField] private Sprite mineIcon;
+    [SerializeField] private Sprite portIcon;
     [SerializeField] private Sprite marketIcon;
-    [SerializeField] private Sprite templeIcon;
-    [SerializeField] private Sprite wallsIcon;
+    [SerializeField] private Sprite millIcon;
+    [SerializeField] private Sprite towerIcon;
 
     [Header("Prefabs")]
     // Production Entry Prefab
@@ -92,16 +92,16 @@ public class ProductionPanelManager : MonoBehaviour
     // Hardcoded production entries
     private void PopulateExampleProductionEntries()
     {
-        AddProductionEntry("Granary", "Stores food to grow population", 3, granaryIcon);
-        AddProductionEntry("Barracks", "Trains soldiers", 5, barracksIcon);
-        AddProductionEntry("Library", "Generates science per turn", 4, libraryIcon);
+        AddProductionEntry("Sheep", "Boosts happiness", 3, sheepIcon);
+        AddProductionEntry("Wizard Tower", "Generates culture per turn", 5, towerIcon);
+        AddProductionEntry("Port", "Increase gold count", 4, portIcon);
     }
 
     // Hardcoded purchase entries
     private void PopulateExamplePurchaseEntries()
     {
         AddPurchaseEntry("Market", "Increase gold output", 0, marketIcon, 100);
-        AddPurchaseEntry("Temple", "Boosts culture", 0, templeIcon, 120);
-        AddPurchaseEntry("Walls", "Improves defense", 0, wallsIcon, 150);
+        AddPurchaseEntry("Temple", "Increase gold output", 0, mineIcon, 120);
+        AddPurchaseEntry("Mill", "Improves Production", 0, millIcon, 150);
     }
 }
