@@ -18,5 +18,9 @@ public class ProductionEntry : MonoBehaviour
             infoText.text = turns + "turns";
         else
             infoText.text = cost + "gold";
+
+        // Assign icon
+        if (iconImage != null)
+            iconImage.sprite = icon;
     }  
 }
