@@ -43,7 +43,7 @@ public class ProductionPanelManager : MonoBehaviour
             closeButton.onClick.AddListener(ClosePanel);
 
         if (overlayButton != null)
-            overlayButton.onClick.AddListener(ClosePanel);
+            overlayButton.onClick.AddListener(OnOverlayClick);
 
         // (!) Hardcoded example entries for testing
         PopulateExampleProductionEntries();
@@ -104,4 +104,23 @@ public class ProductionPanelManager : MonoBehaviour
         AddPurchaseEntry("Mine", "Increase gold output", 0, mineIcon, 120);
         AddPurchaseEntry("Mill", "Improves Production", 0, millIcon, 150);
     }
+
+    // Close panel w/overlay button
+    private void OnOverlayClick()
+{
+    // Cast a ray from the camera to where the mouse clicked
+    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    RaycastHit hit;
+
+    // If the ray hits something
+    if (Physics.Raycast(ray, out hit))
+    {
+        // If the thing we clicked has a BuildingClickHandler, don't close
+        if (hit.collider.GetComponent<BuildingClickHandler>() != null)
+            return; // clicked a building, do nothing
+    }
+
+    // Safe to close panel
+    ClosePanel();
+}
 }
