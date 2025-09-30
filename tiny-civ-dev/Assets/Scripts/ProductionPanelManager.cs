@@ -61,7 +61,7 @@ public class ProductionPanelManager : MonoBehaviour
             Destroy(child.gameObject);
     }
 
-    // (!) Add entries
+    // (!) Add entries for each Production and Purchase panel
     public void AddProductionEntry(string name, string description, int turns, Sprite icon, int cost = 0)
     {
         GameObject newEntry = Instantiate(entryPrefab, productionContentParent);

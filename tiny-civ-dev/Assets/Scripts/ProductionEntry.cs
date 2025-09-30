@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ProductionEntry : MonoBehaviour
 {
-    // Expose text fields for item name and cost and production icon in the Inspector
+    // Expose text fields for item name, cost, production turns, and icon in the Inspector
     [SerializeField] TMP_Text nameText;
     [SerializeField] TMP_Text infoText;
     [SerializeField] Image iconImage;
