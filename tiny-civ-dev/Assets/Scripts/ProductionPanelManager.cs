@@ -25,7 +25,7 @@ public class ProductionPanelManager : MonoBehaviour
     [SerializeField] private Sprite portIcon;
     [SerializeField] private Sprite marketIcon;
     [SerializeField] private Sprite millIcon;
-    [SerializeField] private Sprite towerIcon;
+    [SerializeField] private Sprite wizardTowerIcon;
 
     [Header("Prefabs")]
     // Production Entry Prefab
@@ -93,7 +93,7 @@ public class ProductionPanelManager : MonoBehaviour
     private void PopulateExampleProductionEntries()
     {
         AddProductionEntry("Sheep", "Boosts happiness", 3, sheepIcon);
-        AddProductionEntry("Wizard Tower", "Generates culture per turn", 5, towerIcon);
+        AddProductionEntry("Wizard Tower", "Generates culture per turn", 5, wizardTowerIcon);
         AddProductionEntry("Port", "Increase gold count", 4, portIcon);
     }
 

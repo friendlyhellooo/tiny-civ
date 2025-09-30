@@ -1251,6 +1251,12 @@ MonoBehaviour:
   purchasePanel: {fileID: 955173767}
   productionContentParent: {fileID: 336912455}
   purchaseContentParent: {fileID: 2075619939}
+  sheepIcon: {fileID: 21300000, guid: 6660165b6661d9d42b2b6744dbf9f99f, type: 3}
+  mineIcon: {fileID: 21300000, guid: fcb44b092783a9f45a06e56ad8b4e258, type: 3}
+  portIcon: {fileID: 21300000, guid: 8ca0504f9041270458bbd586d9c5730a, type: 3}
+  marketIcon: {fileID: 21300000, guid: da9e4ed96829fc3419dbccb8684cc93d, type: 3}
+  millIcon: {fileID: 21300000, guid: 4165c8d8a9a55a046b0c1a6b0c6b22fd, type: 3}
+  wizardTowerIcon: {fileID: 21300000, guid: 1297f7e7154a81443b11c34cf545e053, type: 3}
   entryPrefab: {fileID: 4574036427895098629, guid: 4560ebb4e1a2ee04e86c35f1c66ac2ef, type: 3}
   closeButton: {fileID: 744467994}
   overlayButton: {fileID: 1094175375}
