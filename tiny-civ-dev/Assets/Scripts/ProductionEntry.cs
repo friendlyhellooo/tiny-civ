@@ -9,10 +9,14 @@ public class ProductionEntry : MonoBehaviour
     [SerializeField] TMP_Text infoText;
     [SerializeField] Image iconImage;
 
-    public void Setup(string name, string info, Sprite icon)
+    public void Setup(string name, string description, int turns, Sprite icon, int cost = 0)
     {
         nameText.text = name;
-        infoText.text = info;
-        iconImage.sprite = icon;
+
+        // Show turns or cost
+        if (turns > 0)
+            infoText.text = turns + "turns";
+        else
+            infoText.text = cost + "gold";
     }  
 }
