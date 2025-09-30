@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\ProductionPanel.cs" />
     <Compile Include="Assets\Scripts\BuildingRef.cs" />
     <Compile Include="Assets\Scripts\Tooltip.cs" />
+    <Compile Include="Assets\Scripts\TabController.cs" />
     <Compile Include="Assets\Scripts\UnitRef.cs" />
     <Compile Include="Assets\Scripts\ResourceIcon.cs" />
     <Compile Include="Assets\Scripts\UnitData.cs" />
