@@ -1,6 +1,6 @@
 A tinv interactive Civ prototype for fun 🤓
 
-Made with Unity 6
+Made with Unity 6 and free assets by https://kenney.nl/assets
 
 Interactive feautures:
 - Resources Tooltips
