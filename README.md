@@ -1,5 +1,7 @@
 A tinv interactive Civ prototype for fun 🤓
 
+Made with Unity 6
+
 Interactive feautures:
 - Resources Tooltips
 - Unit Panel
