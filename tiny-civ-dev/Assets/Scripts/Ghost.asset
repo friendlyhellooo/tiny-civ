@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af6eab962ea5dd4695510da9dd2dff9, type: 3}
   m_Name: Ghost
   m_EditorClassIdentifier: 
-  unitName: Ghost
-  description: 'Melee Strength: 0
-
-    Movement: 2'
+  unitName: 'Ghost [MIFFED] [Chocobo Empire]'
+  description: "Melee Strength: 0\nMovement: 3\n\nBig Back. A little greedy. \n\n+10
+    Gold to a city of theirs they haunt and -10 Gold to any city they haunt that
+    is not theirs."
   icon: {fileID: 21300000, guid: 92a120e629699b1488fc4e527b6c95b9, type: 3}
