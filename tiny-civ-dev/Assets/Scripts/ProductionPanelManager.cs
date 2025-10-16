@@ -56,18 +56,18 @@ public class ProductionPanelManager : MonoBehaviour
         panel.SetActive(false);
     }
 
-    // Clear the ALL o/ entries prefabs in the panel
-    public void ClearProductionEntires()
-    {
-        foreach (Transform child in productionContentParent)
-            Destroy(child.gameObject);
-    }
+    // Clear ALL o/ entries prefabs in the panel
+    // public void ClearProductionEntires()
+    // {
+    //     foreach (Transform child in productionContentParent)
+    //         Destroy(child.gameObject);
+    // }
 
-    public void ClearPurchaseEntries()
-    {
-        foreach (Transform child in purchaseContentParent)
-            Destroy(child.gameObject);
-    }
+    // public void ClearPurchaseEntries()
+    // {
+    //     foreach (Transform child in purchaseContentParent)
+    //         Destroy(child.gameObject);
+    // }
 
     // (!) Add entries for each Production and Purchase panel
     public void AddProductionEntry(string name, string description, int turns, Sprite icon, int cost = 0)
