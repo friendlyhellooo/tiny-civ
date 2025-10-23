@@ -56,7 +56,7 @@ public class ProductionPanelManager : MonoBehaviour
         panel.SetActive(false);
     }
 
-    // Clear ALL o/ entries prefabs in the panel
+    // (!) NOT NEEDED (Clear ALL o/ entries prefabs in the panel)
     // public void ClearProductionEntires()
     // {
     //     foreach (Transform child in productionContentParent)
